@@ -1,0 +1,39 @@
+[project]
+name = "isz-tool"
+version = "0.1.0"
+description = ".isz to .iso conversion"
+authors = [
+    {name = "Olivier Serres, Andrei Cherniaev"}
+]
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+keywords = [
+    "format-conversion-cli",
+]
+readme = "README.md"
+requires-python = ">=3.2"
+dependencies = [
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.2",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Archiving",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://en.wikipedia.org/wiki/UltraISO#ISZ_format"
+"Repository" = "https://github.com/oserres/isz-tool"
+
+[tool.poetry]
+packages = [
+    { include = "../../../" },
+]
